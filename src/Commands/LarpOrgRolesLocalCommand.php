@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Themysticgeek\LarpOrgRolesLocal\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LarpOrgRolesLocalCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'larp-org-roles-local';
 
     public $description = 'My command';
 

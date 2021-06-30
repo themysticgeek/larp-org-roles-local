@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace Themysticgeek\LarpOrgRolesLocal;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use Themysticgeek\LarpOrgRolesLocal\Commands\LarpOrgRolesLocalCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class LarpOrgRolesLocalServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('larp-org-roles-local')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_larp-org-roles-local_table')
+            ->hasCommand(LarpOrgRolesLocalCommand::class);
     }
 }
